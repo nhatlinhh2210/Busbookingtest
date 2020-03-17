@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "712708443909",
+    "firebase_url": "https://hometesting-57b85.firebaseio.com",
+    "project_id": "hometesting-57b85",
+    "storage_bucket": "hometesting-57b85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712708443909:android:9a142259c9389e69ca716c",
+        "android_client_info": {
+          "package_name": "com.example.hometesting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712708443909-fnslg7too8i085b8d6c9nmui2dckg041.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN3nf2fn7OIxpXTu98pY2-r1kDEtOk9Oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712708443909-fnslg7too8i085b8d6c9nmui2dckg041.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
