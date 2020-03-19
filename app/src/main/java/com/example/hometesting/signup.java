@@ -16,7 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Register extends AppCompatActivity {
+public class signup extends AppCompatActivity {
     EditText etID,etPass,etMail,etRePass;
     Button btnReg;
     FirebaseAuth mFirebaseAuth;
@@ -42,33 +42,33 @@ public class Register extends AppCompatActivity {
                 rePass = etRePass.getText().toString();
 
                 if (id.equals("")){
-                    Toast.makeText(Register.this, "Cần nhập tài khoản",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup.this, "Cần nhập tài khoản",Toast.LENGTH_SHORT).show();
                 }
                 else if (pass.equals("")){
-                    Toast.makeText(Register.this,"Cần nhập mật khẩu",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup.this,"Cần nhập mật khẩu",Toast.LENGTH_SHORT).show();
                 }
                 else if (mail.equals("")){
-                    Toast.makeText(Register.this,"Cần nhập mail",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup.this,"Cần nhập mail",Toast.LENGTH_SHORT).show();
                 }
                 else if (rePass.equals("")){
-                    Toast.makeText(Register.this,"Cần nhập lại mật khẩu",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(signup.this,"Cần nhập lại mật khẩu",Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    mFirebaseAuth.createUserWithEmailAndPassword(mail, pass).addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
+                    mFirebaseAuth.createUserWithEmailAndPassword(mail, pass).addOnCompleteListener(signup.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(!task.isSuccessful()){
-                                Toast.makeText(Register.this,"Đăng ký không thành công",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(signup.this,"Đăng ký không thành công",Toast.LENGTH_SHORT).show();
                             }
                             else {
-                                startActivity(new Intent(Register.this,Home.class));
+                                startActivity(new Intent(signup.this,Home.class));
                             }
                         }
                     });
                 }
                 //else {
-                //    Toast.makeText(Register.this,"Lỗi không xác định",Toast.LENGTH_SHORT).show();
-               // }
+                //    Toast.makeText(signup.this,"Lỗi không xác định",Toast.LENGTH_SHORT).show();
+                // }
 
             }
         });
@@ -76,7 +76,7 @@ public class Register extends AppCompatActivity {
         tvLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Register.this,MainActivity.class);
+                Intent i = new Intent(signup.this,MainActivity.class);
                 startActivity(i);
             }
         });
