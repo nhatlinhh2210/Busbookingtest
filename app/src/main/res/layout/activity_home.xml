@@ -39,7 +39,7 @@
             android:layout_marginTop="10dp"
             android:textColor="@color/colorWhite"
             android:hint="Email"
-            android:inputType="textPassword"
+            android:inputType="textEmailAddress"
             />
         <EditText
             android:id="@+id/etPass"

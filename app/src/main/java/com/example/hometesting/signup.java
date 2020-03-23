@@ -21,6 +21,7 @@ public class signup extends AppCompatActivity {
     Button btnReg;
     FirebaseAuth mFirebaseAuth;
     TextView tvLogin;
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
